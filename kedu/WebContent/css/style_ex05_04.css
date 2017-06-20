@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+p {
+	color: blue;
+	text-align: center;
+}
+
+.style_div {
+	background-color: green;
+}
+
+.style_div P {
+	color: white;
+}

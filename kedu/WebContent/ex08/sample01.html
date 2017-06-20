@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/*스마트폰 */
+	@MEDIA (max-width:799px) {
+		body {
+			background-color: #FFFFFF;
+		}
+		#title:AFTER {
+			content: ": 스마트폰";
+		}
+	}
+	@MEDIA only screen
+	       and (min-width: 800px)
+	       and (max-width: 1023px) {
+		body {
+			background-color: #CACACA;
+		}
+		#title:AFTER {
+			content: ": 태블릿PC";
+		}
+	}
+	@MEDIA only screen
+	       and (min-width: 1024px) {
+		body {
+			background-color: #606060;
+		}
+		#title:AFTER {
+			content: ": 데스크탑PC";
+		}
+		h1 {
+			color: #FFFFFF;
+		}
+	}	
+</style>
+</head>
+<body>
+	<h1 id="title">접속 기기</h1>
+	
+</body>
+</html>
