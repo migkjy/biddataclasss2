@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var size=12;
+		var p=$("p");
+		
+		$(".zoom button").on("click",function(){
+			var btn_index=$(".zoom button").index(this);
+			if(btn_index==0){
+				size++;
+				p.css("font-size", size+"px");
+			}else if(btn_index==2){
+				size--;
+				p.css("font-size", size+"px");
+			}else{
+				p.css("font-size", "12px");				
+				size=12;
+			}
+		});
+		$("#fs").on("change",function(){
+			p.css("font-family", $(this).val());
+		});
+	});
+</script>
+<style type="text/css">
+	body { 
+		font: 12px dotum, "돋움", sans-serif;
+		margin: 20px;
+	}
+</style>
+</head>
+<body>
+	<div id="f_wrap">
+		<dl>
+			<dt>글자크기</dt>
+			<dd class="zoom">
+				<button>+</button>
+				<button>0</button>
+				<button>-</button>
+			</dd>
+			<dt>글자모양</dt>
+			<dd	class="f_style">
+				<select name="fs" id="fs">
+					<option value="dotum,'돋움', sans-serif">돋움</option>
+					<option value="gulim,'굴림', sans-serif">굴림</option>
+					<option value="magun gothic,'맑은고딕', sans-serif">맑은고딕</option>
+					<option value="궁서, sans-serif">궁서</option>
+				</select>
+			</dd>
+		</dl>
+	</div>
+	<p	id="txt_wrap">
+		박근혜 전 대통령의 뇌물수수 의혹 등 사건을 수사하는 검찰이 수사에 나선다. 
+		
+		박영수 특별검사팀으로부터 '박근혜-최순실 게이트' 관련 사건을 넘겨받고 수사에 착수한 검찰 특별수사본부는 15일께 박근혜 전 대통령 측에 소환 일정을 통보하기로 했다. 
+		
+		검찰 특수본 관계자는 14일 기자들과 만난 자리에서 "박 전 대통령 소환 날짜를 내일 정해서 통보하겠다"며 "준비되는 상황을 봐서 정해지면 말씀드리겠다"고 밝혔다. 이 관계자는 박 전 대통령의 조사 때 신분을 묻자 "피의자로 입건돼 있으니 신분은 피의자가 될 것"이라고 말했다. 그는 다만 "아직 박 전 대통령 측과 조율하는 것은 없다"면서 "저희가 통보하는 것"이라고 부연했다. 
+		
+		특검에서 넘어온 기록을 검토하고 질문지를 정리하는 등 준비 작업을 이어온 검찰은 준비 상황에 따라 날짜를 결정해 박 전 대통령 측에 통보할 방침이다. 다만 이 관계자는 박 전 대통령이 다시 소환에 불응하면 어떤 조처를 할지에 대해선 "아직 말씀드릴 단계가 아니다"라고 말을 아꼈다. 원론적으론 박 전 대통령에게 체포영장이나 구속영장 청구 등 강제수사가 가능해진 상황이다. 
+		
+		수사본부 관계자는 '박 전 대통령이 공개적으로 포토라인에 서게 되느냐'는 질문에는 "전례 등을 살펴보겠다"고 설명했다. 
+		
+		'비선 실세' 최순실(61·구속기소)씨의 국정농단과 이권 추구를 허용한 점 등이 인정돼 파면된 박 전 대통령은 뇌물수수와 직권남용 권리행사방해 등 다수 혐의를 받고 있다. 
+		
+		[디지털뉴스국]
+	</p>	
+</body>
+</html>

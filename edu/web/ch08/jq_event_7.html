@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#user_name").focus();
+ 
+		$("#user_id").blur(function(){
+			var user_id = $(this).val();
+			if(user_id==""){
+				$("span").text("필수입력입니다.").css("color","red");
+			}else{
+				$("span").text("");
+			}
+		});
+	 });
+</script>
+</head>
+<body>
+	<p>
+		<input type="text" name="user_name" id="user_name">
+	</p>
+	<p>
+		<input type="text" name="user_id" id="user_id" placeholder="아이디 입력">
+	</p>
+	<span></span>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#menu li:first").css("background","yellow");
+		$("#menu li:last").css("background", "pink");
+		
+		$("#menu li:even").css("border", "1px dot red");
+		$("#menu li:odd").css("border", "1px solid blue");		
+	})
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul id="menu">
+		<li>내용1</li>
+		<li>내용2</li>
+		<li>내용3</li>
+		<li>내용4</li>
+	</ul>
+</body>
+</html>

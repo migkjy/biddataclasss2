@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("h1 a").bind("mouseover focus",function(){
+			$(this).css("background-color","yellow");
+		});	
+		$("h1 a").bind("mouseout blur",function(){
+			$(this).css("background-color","white");
+		});	
+	});
+</script>
+</head>
+<body>
+	<h1><a href="#">내용</a></h1>
+</body>
+</html>

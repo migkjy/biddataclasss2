@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title> 효과와 애니메이션 </title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script><meta charset="UTF-8">
+<script type="text/javascript">
+	$(function(){
+		$("#btn1").on("click", function(){
+			$("h1").fadeTo("show", 0.3);
+		});
+		$("#btn2").on("click", function(){
+			$("h1").fadeTo("show", 1);
+		});
+	})
+</script>
+</head>
+<body>
+	<button id="btn1">투명도(30%)</button>
+	<button id="btn2">투명도(100%)</button>
+	<h1>내용</h1>
+</body>
+</html>

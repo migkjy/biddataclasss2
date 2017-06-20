@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Ajax</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+	   $.ajax({
+	      url:"../ajax/board.json", //데이터를 요청할 URL 주소
+	      dataType:"json", //데이터 타입 설정
+	      success:function(result){ //데이터 성공적으로 요청되었을 때...
+	         $.each(result.board,function(i,d){
+	        	 $.each(d, function(j, elt) {
+					 if(j==0){
+						 $("table").append("<tr></tr>");
+					 }
+					 $("tr:last").append("<td>" + elt + "</td>")
+					 });
+	        	 });
+	      }
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>인기 검색어</h1>
+	<div id="wrap">
+		<table border="1">
+			<tr>
+				<td>글번호</td>
+				<td>제목</td>
+				<td>내용</td>
+				<td>등록일</td>
+				<td>조회수</td>
+			</tr>
+			<tr></tr>
+		</table>
+	</div>
+</body>
+</html>

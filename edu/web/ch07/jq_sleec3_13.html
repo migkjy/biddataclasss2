@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var copy_obj=$("#myList").clone();
+		$(copy_obj).insertAfter("#myList");
+		$("<li>새 내용 추가1</li>").insertBefore("#myList");
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li id="myList">내용</li>
+	</ul>
+</body>
+</html>

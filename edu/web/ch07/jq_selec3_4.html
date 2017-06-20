@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script><title>Insert title here</title>
+<script type="text/javascript">
+	$(function(){
+		$("#txt").text($("#wrap img").attr("src"));
+		$("#wrap img").attr("width", "200");
+		$("#box img").removeAttr("border");
+	});
+</script>
+</head>
+<body>
+	<h1>객체 조작 및 생성</h1>
+	<p id="wrap">
+		<img alt="가위" 
+		 	 src="../images/ch07/math_img_1.jpg"
+		 	 width="100">
+	</p>
+	<p id="txt"></p>
+	<p id="box">
+		<img alt="보" 
+			 src="../images/ch07/math_img_3.jpg"
+			 width="100"
+			 border="2">	
+	</p>
+</body>
+</html>

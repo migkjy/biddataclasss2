@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#member").on("submit", function() {
+			var d = $(this).serialize();
+			
+			$.ajax({
+				url: "../ajax/member.jsp"
+			  , type: "post"
+			  , data: d
+			  , success: function(result){
+				  $("#txt1").append(result+"</br>").after("<p>확인</p></br>");
+			  }
+			});
+			return false;
+		})
+	})
+</script>
+
+</head>
+<body>
+	<form action="" method="post" name="member" id="member">
+		<fieldset>
+			<legend>댓글</legend>
+			<p>
+				<label for="user_name">댓글</label>
+				<input type="text" name="user_name" id="user_name">
+			</p>
+			<p>
+				<input type="submit" value="확인">
+			</p>
+		</fieldset>
+		<h1 id="txt1"></h1>
+	</form>
+</body>
+</html>

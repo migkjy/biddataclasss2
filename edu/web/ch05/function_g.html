@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 사진 갤러리 </title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+li {
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+#gallery{
+	width:350px;
+	margin:30px auto;
+	border:1px solid #999;
+	box-shadow:0 5px 5px rgba(0, 0, 0, 0.3);
+}
+#gallery h1{
+	text-align:center;
+}
+#gallery img{
+	border:1px solid #666;
+}
+#photo{
+	text-align:center;
+}
+#gallery ul{
+	width:800px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#photo_list ul li{
+	width:100px;
+	float:left;
+	text-align:center;
+}
+#photo_list{
+	width:300px;
+	margin:10px auto;
+	/*border:1px dashed #000;*/
+	overflow:hidden;
+}
+.btn_wrap{
+	text-align:center;
+}
+.btn_wrap a{
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+  <div id="gallery">
+    <h1>동해안 갤러리</h1>
+    <p id="photo">
+    <img src="../images/ch05/pic_1.jpg" width="320" alt="" />
+    </p>
+    <div id="photo_list">
+      <ul  id="inner_list">
+        <li>
+        	<a href="../images/ch05/pic_1.jpg">
+        		<img src="../images/ch05/pic_t1.jpg" alt="사진1" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_2.jpg">
+        		<img src="../images/ch05/pic_t2.jpg" alt="사진2" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_3.jpg">
+        		<img src="../images/ch05/pic_t3.jpg" alt="사진3" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_4.jpg">
+        		<img src="../images/ch05/pic_t4.jpg" alt="사진4" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_5.jpg">
+        		<img src="../images/ch05/pic_t5.jpg" alt="사진5" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_6.jpg">
+        		<img src="../images/ch05/pic_t6.jpg" alt="사진6" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_7.jpg">
+        		<img src="../images/ch05/pic_t7.jpg" alt="사진7" />
+        	</a>
+        </li>
+        <li>
+        	<a href="../images/ch05/pic_8.jpg">
+        		<img src="../images/ch05/pic_t8.jpg" alt="사진8" />
+        	</a>
+        </li>
+      </ul>
+    </div>
+    <p class="btn_wrap">
+    <a href="#" id="before_btn">&lt;</a>
+    <a href="#" id="next_btn">&gt;</a>
+    </p>
+  </div>
+</body>
+</html>

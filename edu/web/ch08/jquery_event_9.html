@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#rel_site").change(function() {
+			$("#txt").text($(this).val());
+		});
+	});
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<select id="rel_site">
+		<option value="">사이트 선택</option>
+		<option value="www.naver.com">네이버</option>
+		<option value="www.nate.com">네이트</option>
+		<option value="www.daum.net">다음</option>
+	</select>
+	<p id="txt"></p>
+</body>
+</html>

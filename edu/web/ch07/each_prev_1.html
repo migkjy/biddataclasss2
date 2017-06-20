@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#m li").each(function(i,k){
+			$(k).text("리스트"+i);
+		});
+	});
+</script>
+</head>
+<body>
+	<ul id="m">
+	  <li> Item one </li>
+	  <li> Item two </li>
+	  <li> Item three </li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("li:first-of-type").css("background-color","yellow");
+		$("li:last-of-type").css("background-color","green");
+
+		$("li:nth-child(3n)").css("border","3px dotted red");
+		$("li:nth-last-of-type(3)").css("border","1px dashed blue");
+	})
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul>
+		<li>내용1</li>
+		<li>내용2</li>
+		<li>내용3</li>
+		<li>내용4</li>
+	</ul>
+	<ul>
+		<li>내용5</li>
+		<li>내용6</li>
+		<li>내용7</li>
+		<li>내용8</li>
+	</ul>
+</body>
+</html>
